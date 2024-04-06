@@ -1,8 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-color: antiquewhite;
     text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .main-box {
-    background-color: aquamarine;
+    background-color: rgb(249, 243, 250);
+    height: 60vh;
+    padding: 100px 10px;
+    flex: 1 0 auto;
+}
+
+.main-box h1 {
+    padding: 20px;
+}
+
+.main-box button {
+    margin: 20px;
+    padding: 20px;
+    width: 60%;
 }
