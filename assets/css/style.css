@@ -27,3 +27,51 @@ body {
     padding: 20px;
     width: 60%;
 }
+
+/* Game page */
+.game-field {
+    min-height: 70vh;
+    background-color: blanchedalmond;
+    display: flex;
+    justify-content: space-between;
+}
+
+.player-field {
+    background-color: aquamarine;
+    border: 2px solid;
+    flex-basis: 37%;
+}
+
+#vs {
+    flex-basis: 20%;
+    align-self: center;
+    font-size: 140%;
+}
+
+.ai-field {
+    border: 2px solid;
+    align-self: center;
+    flex-basis: 37%;
+}
+
+#choice-rock {
+    border: 2px solid;
+    height: 33%;
+}
+
+#score {
+    display: flex;
+    flex-direction: row;
+}
+
+#your-score {
+    flex-basis: 45%;
+    margin: 10px;
+    color:blue;
+}
+
+#ai-score {
+    flex-basis: 45%;
+    margin: 10px;
+    color:red;
+}
