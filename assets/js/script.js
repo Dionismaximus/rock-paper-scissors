@@ -21,6 +21,6 @@ document.addEventListener("DOMContentLoaded", function() {
 function playGame(userChoice) {
 
     let computerChoice = choices[Math.floor(Math.random() * choices.length)]
-    alert(`Computer choice ${computerChoice}`)
+    
     aiImageChoice.src = `assets/images/${computerChoice}.jpg`
 }
