@@ -31,14 +31,13 @@ body {
 /* Game page */
 .game-field {
     min-height: 70vh;
-    background-color: blanchedalmond;
     display: flex;
     justify-content: space-between;
+    background-color: rgb(247, 237, 244);
 }
 
 .player-field {
-    background-color: aquamarine;
-    border: 2px solid;
+    display: grid;
     flex-basis: 37%;
 }
 
@@ -49,14 +48,34 @@ body {
 }
 
 .ai-field {
-    border: 2px solid;
     align-self: center;
     flex-basis: 37%;
+    border-radius: 5px;
+    border-radius: 5px;
+    box-shadow: 1px 2px 5px rgb(74, 73, 73);
 }
 
-#choice-rock {
-    border: 2px solid;
-    height: 33%;
+.ai-field img {
+    width: 17vh;
+    border-radius: 50px;
+}
+
+/* Buttons */
+.buttons {
+    margin: 5px;
+    align-self: center;
+    border-radius: 5px;
+    box-shadow: 1px 2px 5px rgb(74, 73, 73);
+}
+
+.buttons:hover {
+    box-shadow: none;
+    background-color: aliceblue;
+}
+
+.buttons img {
+    width: 17vh;
+    border-radius: 50px;
 }
 
 #score {
