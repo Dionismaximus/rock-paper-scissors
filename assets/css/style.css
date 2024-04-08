@@ -54,6 +54,8 @@ body {
     border-radius: 5px;
     border-radius: 5px;
     box-shadow: 1px 2px 5px rgb(124, 124, 124);
+    background-color: white;
+    transition: all 0.5s;
 }
 
 .ai-field img {
@@ -67,11 +69,13 @@ body {
     margin: 5px;
     align-self: center;
     box-shadow: 1px 2px 5px rgb(124, 124, 124);
+    border: none;
+    background-color: white;
+    transform: scale(1);
 }
 
 .buttons:hover {
     transform: scale(1.2);
-    background-color: aliceblue;
     transition: all 0.5s;
 }
 
