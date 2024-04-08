@@ -4,6 +4,7 @@ let computerChoice = '';
 let userChoice =''
 let roundNumber = 1;
 let aiField = document.getElementById('ai-field-change');
+let roundResult = document.getElementById('roundResult');
 
 document.addEventListener("DOMContentLoaded", function() {
     let buttons = document.getElementsByTagName('button')
@@ -17,8 +18,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 setTimeout(() => aiField.style.transform = 'scale(2)', 1800);
 
                 setTimeout(() => playGame(userChoice), 2000);
-                setTimeout(() => button.style.transform = '', 3000)
-                setTimeout(() => aiField.style.transform = '', 3000);
+                setTimeout(() => button.style.transform = '', 4000)
+                setTimeout(() => aiField.style.transform = '', 4000);
             } else {
                 console.log('Wrong choice')
             }
@@ -32,16 +33,25 @@ function playGame(userChoice) {
     computerChoice = choices[Math.floor(Math.random() * choices.length)]
     
     aiImageChoice.src = `assets/images/${computerChoice}.jpg`
+    setTimeout(() => aiImageChoice.src = `assets/images/rock, paper, scissors.gif`, 2500);
     determineWinner();
 }
 
 function determineWinner() {
     if (userChoice === 'rock' && computerChoice === 'scissors' || userChoice === 'paper' && computerChoice ==='rock' || userChoice === 'scissors' && computerChoice === 'paper') {
         addScoreForUser();
+        roundResult.innerText = 'WIN!';
+        roundResult.style.color = 'green';
+        setTimeout(() => roundResult.innerText = '', 2000)
     } else if (userChoice === computerChoice) {
-        console.log('This round end with draw')
+        roundResult.innerText = 'DRAW';
+        roundResult.style.color = 'grey'
+        setTimeout(() => roundResult.innerText = '', 2000)
     } else {
         addScoreForComputer();
+        roundResult.innerText = 'LOSE';
+        roundResult.style.color = 'red'
+        setTimeout(() => roundResult.innerText = '', 2000)
     }
 }
 
