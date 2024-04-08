@@ -30,11 +30,20 @@ function playGame(userChoice) {
 
 function determineWinner() {
     if (userChoice === 'rock' && computerChoice === 'scissors' || userChoice === 'paper' && computerChoice ==='rock' || userChoice === 'scissors' && computerChoice === 'paper') {
-        alert(`You win ${userChoice}`)
-        console.log('You win')
+        addScoreForUser();
     } else if (userChoice === computerChoice) {
         alert(`Draw`)
     } else {
-        alert(`Computer win ${computerChoice}`)
+        addScoreForComputer();
     }
+}
+
+function addScoreForUser() {
+    let win = parseInt(document.getElementById('your-wins').innerText);
+    document.getElementById('your-wins').innerText = ++win;
+}
+
+function addScoreForComputer() {
+    let win = parseInt(document.getElementById('ai-wins').innerText);
+    document.getElementById('ai-wins').innerText = ++win;
 }
