@@ -65,12 +65,11 @@ body {
 .buttons {
     margin: 5px;
     align-self: center;
-    border-radius: 5px;
     box-shadow: 1px 2px 5px rgb(124, 124, 124);
 }
 
 .buttons:hover {
-    box-shadow: none;
+    transform: scale(1.2);
     background-color: aliceblue;
     transition: all 0.5s;
 }

@@ -2,6 +2,7 @@ let choices = ['rock', 'paper', 'scissors']
 let aiImageChoice = document.getElementById('ai-image-choice')
 let computerChoice = '';
 let userChoice =''
+let roundNumber = 0;
 
 document.addEventListener("DOMContentLoaded", function() {
     let buttons = document.getElementsByTagName('button')
@@ -10,8 +11,10 @@ document.addEventListener("DOMContentLoaded", function() {
         button.addEventListener('click', function() {
             if (this.getAttribute('data-type')) {
                 userChoice = this.getAttribute('data-type')
-                alert(`You choose ${userChoice}`)
+                
+                
                 playGame(userChoice);
+                countRounds();
             } else {
                 console.log('Wrong choice')
             }
@@ -46,4 +49,14 @@ function addScoreForUser() {
 function addScoreForComputer() {
     let win = parseInt(document.getElementById('ai-wins').innerText);
     document.getElementById('ai-wins').innerText = ++win;
+}
+
+function countRounds() {
+    roundNumber += 1;
+    if (roundNumber <= 10) {
+        alert(`Round number ${roundNumber}`)
+    } else {
+        roundNumber = 0;
+        alert(`End of the game`)
+    }
 }
