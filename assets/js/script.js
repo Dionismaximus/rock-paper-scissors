@@ -6,6 +6,7 @@ let roundNumber = 1;
 let aiField = document.getElementById('ai-field-change');
 let roundResult = document.getElementById('roundResult');
 
+
 document.addEventListener("DOMContentLoaded", function() {
     let buttons = document.getElementsByTagName('button')
 
@@ -16,21 +17,28 @@ document.addEventListener("DOMContentLoaded", function() {
                 setTimeout(() => countRounds(), 3000);
 
                 /* Styles for buttons and game-field */
-                button.style.transform = 'scale(2)';
+                button.style.transform = 'scale(1.5)';
 
-                setTimeout(() => aiField.style.transform = 'scale(2)', 1800);
+                buttons[0].style.zIndex = '-1';
+                buttons[1].style.zIndex = '-1';
+                buttons[2].style.zIndex = '-1';
+                button.style.zIndex = '1';
+
+
+                setTimeout(() => aiField.style.transform = 'scale(1.5)', 1800);
 
                 let gameField = document.getElementById('gameField');
-                gameField.style.zIndex = '1';
-                gameField.style.backgroundColor = 'grey';
 
+                gameField.style.backgroundColor = 'rgba(124, 124, 124, 0.5)';
                 setTimeout(() => playGame(userChoice), 2000);
 
                 /* Return default styles at the end of the round*/
                 setTimeout(() => button.style.transform = '', 4000);
                 setTimeout(() => aiField.style.transform = '', 4000);
                 setTimeout(() => gameField.style.backgroundColor = '', 4000);
-                
+                setTimeout(() => buttons[0].style.zIndex = '', 4000);
+                setTimeout(() => buttons[1].style.zIndex = '', 4000);
+                setTimeout(() => buttons[2].style.zIndex = '', 4000);    
             } else {
                 console.log('Wrong choice')
             }
