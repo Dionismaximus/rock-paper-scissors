@@ -12,6 +12,11 @@ body {
     font-family: "Raleway", sans-serif;
 }
 
+#round {
+    padding: 15px 0 30px 0;
+    background-color: rgb(247, 237, 244);
+}
+
 .main-box {
     background-color: rgb(249, 243, 250);
     height: 60vh;
@@ -31,7 +36,7 @@ body {
 
 /* Game page */
 .game-field {
-    min-height: 70vh;
+    min-height: 65vh;
     display: flex;
     justify-content: space-between;
     background-color: rgb(247, 237, 244);
@@ -71,11 +76,6 @@ body {
     box-shadow: 1px 2px 5px rgb(124, 124, 124);
     border: none;
     background-color: white;
-    transform: scale(1);
-}
-
-.buttons:hover {
-    transform: scale(1.2);
     transition: all 0.5s;
 }
 
@@ -104,4 +104,16 @@ body {
 #roundResult {
     font-size: 170%;
     font-weight: 700;
+    z-index: 2;
+    position: absolute;
+    top: 80px;
+    left: 100px;
+}
+
+/* Media query: laptops and larger (992px and up) */
+@media screen and (min-width: 992px) {
+    .buttons:hover {
+        transform: scale(1.2);
+        transition: all 0.5s;
+    }
 }

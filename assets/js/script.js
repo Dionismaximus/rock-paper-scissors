@@ -14,12 +14,23 @@ document.addEventListener("DOMContentLoaded", function() {
             if (this.getAttribute('data-type')) {
                 userChoice = this.getAttribute('data-type')
                 setTimeout(() => countRounds(), 3000);
+
+                /* Styles for buttons and game-field */
                 button.style.transform = 'scale(2)';
+
                 setTimeout(() => aiField.style.transform = 'scale(2)', 1800);
 
+                let gameField = document.getElementById('gameField');
+                gameField.style.zIndex = '1';
+                gameField.style.backgroundColor = 'grey';
+
                 setTimeout(() => playGame(userChoice), 2000);
-                setTimeout(() => button.style.transform = '', 4000)
+
+                /* Return default styles at the end of the round*/
+                setTimeout(() => button.style.transform = '', 4000);
                 setTimeout(() => aiField.style.transform = '', 4000);
+                setTimeout(() => gameField.style.backgroundColor = '', 4000);
+                
             } else {
                 console.log('Wrong choice')
             }
