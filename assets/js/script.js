@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 buttons[2].style.zIndex = '-1';
                 button.style.zIndex = '1';
 
-
+                
                 setTimeout(() => aiField.style.transform = 'scale(1.5)', 1800);
 
                 let gameField = document.getElementById('gameField');
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 setTimeout(() => gameField.style.backgroundColor = '', 4000);
                 setTimeout(() => buttons[0].style.zIndex = '', 4000);
                 setTimeout(() => buttons[1].style.zIndex = '', 4000);
-                setTimeout(() => buttons[2].style.zIndex = '', 4000);    
+                setTimeout(() => buttons[2].style.zIndex = '', 4000);   
             } else {
                 console.log('Wrong choice')
             }
@@ -53,10 +53,10 @@ function playGame(userChoice) {
     
     aiImageChoice.src = `assets/images/${computerChoice}.jpg`
     setTimeout(() => aiImageChoice.src = `assets/images/rock, paper, scissors.gif`, 2500);
-    determineWinner();
+    determineWinnerOfRound();
 }
 
-function determineWinner() {
+function determineWinnerOfRound() {
     if (userChoice === 'rock' && computerChoice === 'scissors' || userChoice === 'paper' && computerChoice ==='rock' || userChoice === 'scissors' && computerChoice === 'paper') {
         addScoreForUser();
         roundResult.innerText = 'WIN!';
@@ -95,6 +95,33 @@ function countRounds() {
         document.getElementById('your-wins').innerText = '0'
         document.getElementById('ai-wins').innerText = '0';
         document.getElementById('round-number').innerText = '1';
-        alert(`End of the game`)
+        determineWinnerOfGame();
     }
+}
+
+function determineWinnerOfGame() {
+    let userWins = document.getElementById('your-wins').textContent;
+    let aiWins = document.getElementById('ai-wins').textContent;
+    let endGameMessage ='';
+
+    if (userWins > aiWins) {
+        endGameMessage = 'Congratulation!<br>You won the game!'
+    } else if (userWins < aiWins) {
+        endGameMessage = 'Ahh. Bad luck!<br> Sorry, you lost.'
+    } else {
+        endGameMessage = 'This game ended<br> in a draw.'
+    }
+    let endGameMessageBlock = document.getElementById('endGameMessage');
+    endGameMessageBlock.innerHTML = `<p>${endGameMessage}</p>
+    <button onclick="document.location='game.html'">Play again</button>
+    <br>  
+    <button onclick="document.location='index.html'">Quit</button>`
+    endGameMessageBlock.style.cssText = `
+        width: 70%;
+        background-color: bisque;
+        position: absolute;
+        top:40%;
+        left:50%;
+        transform:translate(-50%, -50%);
+    `
 }

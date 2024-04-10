@@ -118,6 +118,21 @@ h1 {
     margin-right:auto;
 }
 
+/* End game message */
+
+#endGameMessage button {
+    width: 150px;
+    height: 35px;
+    margin: 10px;
+}
+
+#endGameMessage a {
+    text-decoration: none;
+}
+#endGameMessage p {
+    padding: 10px;
+}
+
 /* Media query: laptops and larger (992px and up) */
 @media screen and (min-width: 992px) {
     .buttons:hover {
