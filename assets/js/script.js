@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 setTimeout(() => gameField.style.backgroundColor = '', 4000);
                 setTimeout(() => buttons[0].style.zIndex = '', 4000);
                 setTimeout(() => buttons[1].style.zIndex = '', 4000);
-                setTimeout(() => buttons[2].style.zIndex = '', 4000);   
+                setTimeout(() => buttons[2].style.zIndex = '', 4000);
             } else {
                 console.log('Wrong choice')
             }
@@ -91,10 +91,6 @@ function countRounds() {
     if (roundNumber <= 10) {
         document.getElementById('round-number').innerText = ++game;
     } else {
-        roundNumber = 1;
-        document.getElementById('your-wins').innerText = '0'
-        document.getElementById('ai-wins').innerText = '0';
-        document.getElementById('round-number').innerText = '1';
         determineWinnerOfGame();
     }
 }
@@ -111,10 +107,11 @@ function determineWinnerOfGame() {
     } else {
         endGameMessage = 'This game ended<br> in a draw.'
     }
+
     let endGameMessageBlock = document.getElementById('endGameMessage');
     endGameMessageBlock.innerHTML = `<p>${endGameMessage}</p>
-    <button onclick="document.location='game.html'">Play again</button>
-    <br>  
+    <button id='start' onclick="document.location='game.html'">Play again</button>
+    <br>
     <button onclick="document.location='index.html'">Quit</button>`
     endGameMessageBlock.style.cssText = `
         width: 70%;
@@ -124,4 +121,16 @@ function determineWinnerOfGame() {
         left:50%;
         transform:translate(-50%, -50%);
     `
+
+
+}
+
+let start = document.getElementById('start');
+start.addEventListener('click', startNewGame);
+
+function startNewGame() {
+    roundNumber = 1;
+    document.getElementById('your-wins').innerText = '0'
+    document.getElementById('ai-wins').innerText = '0';
+    document.getElementById('round-number').innerText = '1';
 }
