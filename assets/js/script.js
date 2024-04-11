@@ -24,11 +24,11 @@ document.addEventListener("DOMContentLoaded", function() {
                 buttons[2].style.zIndex = '-1';
                 button.style.zIndex = '1';
 
-                
+
                 setTimeout(() => aiField.style.transform = 'scale(1.5)', 1800);
 
                 let gameField = document.getElementById('gameField');
-
+                
                 gameField.style.backgroundColor = 'rgba(124, 124, 124, 0.5)';
                 setTimeout(() => playGame(userChoice), 2000);
 
@@ -39,6 +39,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 setTimeout(() => buttons[0].style.zIndex = '', 4000);
                 setTimeout(() => buttons[1].style.zIndex = '', 4000);
                 setTimeout(() => buttons[2].style.zIndex = '', 4000);
+                
             } else {
                 console.log('Wrong choice')
             }
@@ -120,15 +121,28 @@ function determineWinnerOfGame() {
         top:40%;
         left:50%;
         transform:translate(-50%, -50%);
+        z-index: 99;
     `
-
-
+    let gameField = document.getElementById('gameField');
+                
+    gameField.style.backgroundImage = 'linear-gradient(to right bottom, #dcdcdc, #e0d0dc, #eec3c9, #f1baa6, #dcba82)';
+    
+    let buttons = document.getElementsByTagName('button');
+    for (let button of buttons) {
+        buttons[0].style.display = 'none';
+        buttons[1].style.display = 'none';
+        buttons[2].style.display = 'none';
+    }
+    let aiField = document.getElementById('ai-field-change');
+    aiField.style.display = 'none';
+    let vs = document.getElementById('vs');
+    vs.style.display = 'none';
 }
 
-let start = document.getElementById('start');
-start.addEventListener('click', startNewGame);
-
 function startNewGame() {
+
+    let start = document.getElementById('start');
+    start.addEventListener('click', startNewGame);
     roundNumber = 1;
     document.getElementById('your-wins').innerText = '0'
     document.getElementById('ai-wins').innerText = '0';
