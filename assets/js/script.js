@@ -18,7 +18,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
                 /* Styles for buttons and game-field */
                 button.style.transform = 'scale(1.5)';
-
+                button.disabled = true;
+                setTimeout(() => button.disabled = false, 4000);
+                
                 buttons[0].style.zIndex = '-1';
                 buttons[1].style.zIndex = '-1';
                 buttons[2].style.zIndex = '-1';
@@ -123,21 +125,23 @@ function determineWinnerOfGame() {
         transform:translate(-50%, -50%);
         z-index: 99;
     `
-    let gameField = document.getElementById('gameField');
-                
-    gameField.style.backgroundImage = 'linear-gradient(to right bottom, #dcdcdc, #e0d0dc, #eec3c9, #f1baa6, #dcba82)';
+    let endGame = document.getElementById('endGame');
+    endGame.style.display = 'none';
+
+    let endGameShadow = document.getElementById('endGameShadow');            
+    endGameShadow.style.cssText = `
+        width: 100%;
+        height: 70vh;
+        background-color: grey;
+        border: 3px solid black;
+    `;
     
-    let buttons = document.getElementsByTagName('button');
-    for (let button of buttons) {
-        buttons[0].style.display = 'none';
-        buttons[1].style.display = 'none';
-        buttons[2].style.display = 'none';
-    }
-    let aiField = document.getElementById('ai-field-change');
-    aiField.style.display = 'none';
-    let vs = document.getElementById('vs');
-    vs.style.display = 'none';
 }
+
+/* Попробовать display none для game-field и добавить div с заставкой внизу
+    Проверить текущий код с выходом на главную страницу. Все ли норм?
+
+*/
 
 function startNewGame() {
 
