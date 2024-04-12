@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
         button.addEventListener('click', function() {
             if (this.getAttribute('data-type')) {
                 userChoice = this.getAttribute('data-type')
-                setTimeout(() => countRounds(), 3000);
+                setTimeout(() => countRounds(), 4000);
 
                 /* Styles for buttons and game-field */
                 button.style.transform = 'scale(1.5)';
@@ -131,17 +131,12 @@ function determineWinnerOfGame() {
     let endGameShadow = document.getElementById('endGameShadow');            
     endGameShadow.style.cssText = `
         width: 100%;
-        height: 70vh;
+        height: 80vh;
         background-color: grey;
-        border: 3px solid black;
     `;
     
 }
 
-/* Попробовать display none для game-field и добавить div с заставкой внизу
-    Проверить текущий код с выходом на главную страницу. Все ли норм?
-
-*/
 
 function startNewGame() {
 
