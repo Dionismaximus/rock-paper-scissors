@@ -104,7 +104,7 @@ function determineWinnerOfGame() {
     let endGameMessage ='';
 
     if (userWins > aiWins) {
-        endGameMessage = 'Congratulation!<br>You won the game!<br><i class="fa-regular fa-face-smile"></i>'
+        endGameMessage = 'Congratulations!<br>You won the game!<br><i class="fa-regular fa-face-smile"></i>'
     } else if (userWins < aiWins) {
         endGameMessage = 'Ahh. Bad luck!<br> Sorry, you lost.<br><i class="fa-regular fa-face-frown"></i>'
     } else {
@@ -117,13 +117,7 @@ function determineWinnerOfGame() {
     <br>
     <button onclick="document.location='index.html'">Quit</button>`
     endGameMessageBlock.style.cssText = `
-        width: 70%;
-        background-color: bisque;
-        position: absolute;
-        top:45%;
-        left:50%;
-        transform:translate(-50%, -50%);
-        z-index: 99;
+        
     `
     let endGame = document.getElementById('endGame');
     endGame.style.display = 'none';

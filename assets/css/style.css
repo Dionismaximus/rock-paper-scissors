@@ -17,7 +17,7 @@ h1 {
     font-family: "Bungee Spice", sans-serif;
     font-weight: 400;
     font-style: normal;
-    background-color: #2F4858;
+    background-image: linear-gradient(to right bottom, #192d3b, #2d2b42, #46243a, #542225, #4e2c09);
     font-size: 200%;
 }
 
@@ -51,7 +51,8 @@ h1 {
     text-align: left;
     height: 320px;
     padding: 0 30px ;
-    background-color: #2F4858;
+    /*background-color: #2F4858;*/
+    background-image: linear-gradient(to right top, #192d3b, #2d2b42, #46243a, #542225, #4e2c09);
     color: white;
 }
 #rules h3 {
@@ -146,7 +147,7 @@ h1 {
     font-weight: 700;
     z-index: 99;
     position: absolute;
-    top: 122px;
+    top: 130px;
     left:0;
     right:0;
     margin-left:auto;
@@ -154,6 +155,17 @@ h1 {
 }
 
 /* End game message */
+
+#endGameMessage {
+    width: 70%;
+    background-color: bisque;
+    position: absolute;
+    top:45%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    z-index: 99;
+    font-size: 120%;
+}
 
 #endGameMessage button {
     width: 150px;
@@ -168,10 +180,27 @@ h1 {
     padding: 10px;
 }
 
-/* Media query: laptops and larger (992px and up) */
-@media screen and (min-width: 992px) {
+/* Media query: large or landscape phones (500px and up) */
+@media screen and (min-width: 500px) {
+    h1 {
+        padding: 10px 29%;
+    }
+}
+
+
+
+/* Media query: laptops and larger (900px and up) */
+@media screen and (min-width: 900px) {
     .buttons:hover {
         transform: scale(1.2);
         transition: all 0.5s;
+    }
+    #gameField {
+        width: 70%;
+        margin-left: 15%;
+        padding: 0 40px;
+    }
+    #endGameMessage {
+        width: 30%;
     }
 }
