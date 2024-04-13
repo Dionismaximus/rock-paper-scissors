@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
     for (let button of buttons) {
         button.addEventListener('click', function() {
             if (this.getAttribute('data-type')) {
-                userChoice = this.getAttribute('data-type')
+                userChoice = this.getAttribute('data-type');
                 setTimeout(() => countRounds(), 4000);
 
                 /* Styles for buttons and game-field */
@@ -104,23 +104,23 @@ function determineWinnerOfGame() {
     let endGameMessage ='';
 
     if (userWins > aiWins) {
-        endGameMessage = 'Congratulation!<br>You won the game!'
+        endGameMessage = 'Congratulation!<br>You won the game!<br><i class="fa-regular fa-face-smile"></i>'
     } else if (userWins < aiWins) {
-        endGameMessage = 'Ahh. Bad luck!<br> Sorry, you lost.'
+        endGameMessage = 'Ahh. Bad luck!<br> Sorry, you lost.<br><i class="fa-regular fa-face-frown"></i>'
     } else {
-        endGameMessage = 'This game ended<br> in a draw.'
+        endGameMessage = 'This game ended<br> in a draw.<br><i class="fa-regular fa-face-meh"></i>'
     }
 
     let endGameMessageBlock = document.getElementById('endGameMessage');
-    endGambutton>eMessageBlock.innerHTML = `<p>${endGameMessage}</p>
-    <button id='start' onclick="document.location='game.html'">Play again</
+    endGameMessageBlock.innerHTML = `<p>${endGameMessage}</p>
+    <button id='start' onclick="document.location='game.html'">Play again</button>
     <br>
     <button onclick="document.location='index.html'">Quit</button>`
     endGameMessageBlock.style.cssText = `
         width: 70%;
         background-color: bisque;
         position: absolute;
-        top:40%;
+        top:45%;
         left:50%;
         transform:translate(-50%, -50%);
         z-index: 99;
@@ -131,7 +131,7 @@ function determineWinnerOfGame() {
     let endGameShadow = document.getElementById('endGameShadow');            
     endGameShadow.style.cssText = `
         width: 100%;
-        height: 80vh;
+        height: 70vh;
         background-color: grey;
     `;
     
