@@ -13,7 +13,7 @@ body {
 }
 
 h1 {
-    padding: 10px 12%;
+    padding: 5px;
     font-family: "Bungee Spice", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -32,7 +32,7 @@ h1 {
 }
 
 .main-box h1 {
-    padding: 20px;
+    padding: 10px;
 }
 
 .main-box p {
@@ -60,12 +60,17 @@ h1 {
 /* Styles for block with rules */
 #rules {
     text-align: left;
-    height: 43.5vh;
-    padding: 0 30px ;
+    height: 44.5vh;
+    padding: 0 5px 0 30px;
     /*background-color: #2F4858;*/
     background-image: linear-gradient(to right, #490323, #411032, #361b3c, #282241, #1d2841, #1d2841, #1d2841, #1d2841, #282241, #361b3c, #411032, #490323);
     color: white;
+    font-size: 90%;
 }
+#rules p {
+    padding-top: 5px;
+}
+
 #headerRules {
     text-align: center;
     padding: 5px;
@@ -130,7 +135,6 @@ h1 {
     background-color: white;
     transition: all 0.5s;
     border-radius: 8px;
-
 }
 
 .buttons img {
@@ -205,10 +209,15 @@ h1 {
         padding: 0 10%;
     }
     .main-box button {
-        width: 30%;
+        width: 33%;
     }
     #rules {
         padding-left: 20%;
+        font-size: 100%;
+    }
+
+    #rules p {
+        padding-top: 15px;
     }
 
     #roundResult {
@@ -245,5 +254,8 @@ h1 {
     }
     #rules {
         padding-left: 37%; 
+    }
+    #rules p {
+        padding-top: 40px;
     }
 }
