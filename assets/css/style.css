@@ -23,7 +23,7 @@ h1 {
 
 #round {
     padding: 7px;
-    background-color: rgb(247, 237, 244);
+    background-color: rgb(249, 243, 250);
 }
 
 .main-box {
@@ -47,6 +47,7 @@ h1 {
     font-size: 110%;
     background-image: linear-gradient(to right, #8f7d9f, #756e8e, #5c5f7c, #455068, #314155, #314155, #314155, #314155, #455068, #5c5f7c, #756e8e, #8f7d9f);
     color: white;
+    border-radius: 35px;
 }
 .main-box button:hover {
     box-shadow: none;
@@ -178,6 +179,8 @@ h1 {
     transform:translate(-50%, -50%);
     z-index: 99;
     font-size: 120%;
+    background-image: linear-gradient(to right, #8f7d9f, #756e8e, #5c5f7c, #455068, #314155, #314155, #314155, #314155, #455068, #5c5f7c, #756e8e, #8f7d9f);
+    color: white;
 }
 
 #endGameMessage button {
@@ -236,7 +239,6 @@ h1 {
     }
     .main-box button {
         width: 20%;
-        border-radius: 35px;
     }
     h1 {
         font-size: 240%;

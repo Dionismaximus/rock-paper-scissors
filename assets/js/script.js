@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
                 let gameField = document.getElementById('gameField');
                 
-                gameField.style.background = 'rgba(124, 124, 124, 0.5)';
+                gameField.style.background = 'rgba(86, 86, 86, 0.8)';
                 setTimeout(() => playGame(userChoice), 2000);
 
                 /* Return default styles at the end of the round*/
@@ -126,7 +126,7 @@ function determineWinnerOfGame() {
     endGameShadow.style.cssText = `
         width: 100%;
         height: 70vh;
-        background-color: grey;
+        background-color: rgba(86, 86, 86);
     `;
     
 }
