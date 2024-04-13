@@ -17,7 +17,7 @@ h1 {
     font-family: "Bungee Spice", sans-serif;
     font-weight: 400;
     font-style: normal;
-    background-image: linear-gradient(to right bottom, #192d3b, #2d2b42, #46243a, #542225, #4e2c09);
+    background-image: linear-gradient(to right, #490323, #411032, #361b3c, #282241, #1d2841, #1d2841, #1d2841, #1d2841, #282241, #361b3c, #411032, #490323);
     font-size: 200%;
 }
 
@@ -43,7 +43,14 @@ h1 {
     margin: 20px;
     padding: 20px;
     width: 60%;
-    box-shadow: 1px 2px 5px rgb(125, 125, 125);;
+    box-shadow: 4px 4px 5px rgb(125, 125, 125);
+    font-size: 110%;
+    background-image: linear-gradient(to right, #8f7d9f, #756e8e, #5c5f7c, #455068, #314155, #314155, #314155, #314155, #455068, #5c5f7c, #756e8e, #8f7d9f);
+    color: white;
+}
+.main-box button:hover {
+    box-shadow: none;
+    transition: all 0.5s;
 }
 
 /* Styles for block with rules */
@@ -52,15 +59,16 @@ h1 {
     height: 320px;
     padding: 0 30px ;
     /*background-color: #2F4858;*/
-    background-image: linear-gradient(to right top, #192d3b, #2d2b42, #46243a, #542225, #4e2c09);
+    background-image: linear-gradient(to right, #490323, #411032, #361b3c, #282241, #1d2841, #1d2841, #1d2841, #1d2841, #282241, #361b3c, #411032, #490323);
     color: white;
 }
-#rules h3 {
+#headerRules {
     text-align: center;
-    padding: 10px;
+    padding: 5px;
     font-family: "Bungee Spice", sans-serif;
     font-weight: 400;
     font-style: normal;
+    background-image: linear-gradient(to right, #490323, #411032, #361b3c, #282241, #1d2841, #1d2841, #1d2841, #1d2841, #282241, #361b3c, #411032, #490323);
 }
 
 #rules ul {
@@ -185,6 +193,12 @@ h1 {
     h1 {
         padding: 10px 29%;
     }
+    .main-box button {
+        width: 30%;
+    }
+    #rules {
+        padding-left: 20%; 
+    }
 }
 
 
@@ -202,5 +216,15 @@ h1 {
     }
     #endGameMessage {
         width: 30%;
+    }
+    .main-box button {
+        width: 20%;
+        border-radius: 35px;
+    }
+    h1 {
+        font-size: 240%;
+    }
+    #rules {
+        padding-left: 34%; 
     }
 }
