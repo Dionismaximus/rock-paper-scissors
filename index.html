@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
 
     <title>Rock, paper, scissors</title>
 </head>
@@ -16,8 +17,23 @@
     <div class="main-box">
         <h1>ROCK PAPER SCISSORS</h1>
         <p>Let's play our beloved Rock, Paper, Scissors game with the strongest AI</p>
-        <form action="game.html">
-            <button>Start game</button>
+        <button onclick="document.location='game.html'">Start game</button>
+    </div>
+    
+    <div id="rules">
+        <h3>Rules</h3>
+        <ol>
+            <li>Make your choice: rock, paper or scissors</li>
+            <li>Determining the winner:
+                <ul>
+                    <li>Rock beats scissors</li>
+                    <li>Paper beats rock</li>
+                    <li>Scissors beats paper</li>
+                    <li>If the choices are the same, it's a draw.</li>
+                </ul>
+            </li>
+            <li>You have 10 rounds to determine the winner of game.</li>
+        </ol>
     </div>
 </body>
 </html>

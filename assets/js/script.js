@@ -112,8 +112,8 @@ function determineWinnerOfGame() {
     }
 
     let endGameMessageBlock = document.getElementById('endGameMessage');
-    endGameMessageBlock.innerHTML = `<p>${endGameMessage}</p>
-    <button id='start' onclick="document.location='game.html'">Play again</button>
+    endGambutton>eMessageBlock.innerHTML = `<p>${endGameMessage}</p>
+    <button id='start' onclick="document.location='game.html'">Play again</
     <br>
     <button onclick="document.location='index.html'">Quit</button>`
     endGameMessageBlock.style.cssText = `
