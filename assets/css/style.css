@@ -22,7 +22,7 @@ h1 {
 }
 
 #round {
-    padding: 7px 0 30px 0;
+    padding: 7px;
     background-color: rgb(247, 237, 244);
 }
 
@@ -87,7 +87,7 @@ h1 {
     min-height: 62vh;
     display: flex;
     justify-content: space-between;
-    background-color: rgb(248, 222, 233);
+    background: linear-gradient(to right, #8f7d9f, #a392ae, #b6a8be, #cabece, #ddd5df, #ddd5df, #ddd5df, #ddd5df, #cabece, #b6a8be, #a392ae, #8f7d9f);
 }
 
 .player-field {
@@ -136,6 +136,7 @@ h1 {
 #score {
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 #your-score {
@@ -151,11 +152,11 @@ h1 {
 }
 
 #roundResult {
-    font-size: 170%;
+    font-size: 180%;
     font-weight: 700;
     z-index: 99;
     position: absolute;
-    top: 130px;
+    bottom: 15px;
     left:0;
     right:0;
     margin-left:auto;
@@ -193,11 +194,21 @@ h1 {
     h1 {
         padding: 10px 29%;
     }
+    #gameField {
+        padding: 0 10%;
+    }
     .main-box button {
         width: 30%;
     }
     #rules {
         padding-left: 20%; 
+    }
+    .buttons {
+        width: 150px;
+    }
+    #roundResult {
+        bottom: 35px;
+        font-size: 200%;
     }
 }
 
@@ -210,9 +221,7 @@ h1 {
         transition: all 0.5s;
     }
     #gameField {
-        width: 70%;
-        margin-left: 15%;
-        padding: 0 40px;
+        padding: 0 20%;
     }
     #endGameMessage {
         width: 30%;

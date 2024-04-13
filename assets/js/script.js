@@ -31,13 +31,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
                 let gameField = document.getElementById('gameField');
                 
-                gameField.style.backgroundColor = 'rgba(124, 124, 124, 0.5)';
+                gameField.style.background = 'rgba(124, 124, 124, 0.5)';
                 setTimeout(() => playGame(userChoice), 2000);
 
                 /* Return default styles at the end of the round*/
                 setTimeout(() => button.style.transform = '', 4000);
                 setTimeout(() => aiField.style.transform = '', 4000);
-                setTimeout(() => gameField.style.backgroundColor = '', 4000);
+                setTimeout(() => gameField.style.background = '', 4000);
                 setTimeout(() => buttons[0].style.zIndex = '', 4000);
                 setTimeout(() => buttons[1].style.zIndex = '', 4000);
                 setTimeout(() => buttons[2].style.zIndex = '', 4000);
