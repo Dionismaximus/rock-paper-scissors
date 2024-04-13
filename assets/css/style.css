@@ -51,12 +51,15 @@ h1 {
 .main-box button:hover {
     box-shadow: none;
     transition: all 0.5s;
+    background: linear-gradient(to right, #8f7d9f, #a295b1, #b5adc3, #cac5d5, #e0dee7, #e0dee7, #e0dee7, #e0dee7, #cac5d5, #b5adc3, #a295b1, #8f7d9f);
+    color: black;
 }
+
 
 /* Styles for block with rules */
 #rules {
     text-align: left;
-    height: 320px;
+    height: 43.5vh;
     padding: 0 30px ;
     /*background-color: #2F4858;*/
     background-image: linear-gradient(to right, #490323, #411032, #361b3c, #282241, #1d2841, #1d2841, #1d2841, #1d2841, #282241, #361b3c, #411032, #490323);
@@ -108,6 +111,7 @@ h1 {
     box-shadow: 1px 2px 5px rgb(124, 124, 124);
     background-color: white;
     transition: all 0.5s;
+    margin: 5px;
 }
 
 .ai-field img {
@@ -201,14 +205,18 @@ h1 {
         width: 30%;
     }
     #rules {
-        padding-left: 20%; 
+        padding-left: 20%;
     }
-    .buttons {
-        width: 150px;
-    }
+
     #roundResult {
         bottom: 35px;
         font-size: 200%;
+    }
+    .player-field {
+        flex-basis: 30%;
+    }
+    .ai-field {
+        flex-basis: 30%;
     }
 }
 
@@ -234,6 +242,6 @@ h1 {
         font-size: 240%;
     }
     #rules {
-        padding-left: 34%; 
+        padding-left: 37%; 
     }
 }
