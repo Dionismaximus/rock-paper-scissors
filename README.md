@@ -1,4 +1,4 @@
-# Overview
+## Overview
 This website is the second project in my Code Institute course.
 
 It showcases various programming skills and methods that I acquired during the course.
@@ -46,7 +46,7 @@ Link to the live site here: [Rock-paper-scissors Game](https://dionismaximus.git
 
 ## Validator testing
 - __HTML__
-- HTML code has been tested on [validator.w3.org website](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdionismaximus.github.io%2Frock-paper-scissors%2Fgame.html/)
+  - HTML code has been tested on [validator.w3.org website](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdionismaximus.github.io%2Frock-paper-scissors%2Fgame.html/)
 ![Game page](assets/images/Readme-img/html-check.png)
 - __CSS__
   - No errors were return when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator/)
