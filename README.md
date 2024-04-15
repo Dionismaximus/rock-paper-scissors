@@ -41,7 +41,20 @@ Link to the live site here: [Rock-paper-scissors Game](https://dionismaximus.git
 - I confirmed that the all pages, blocks and section are readable and easy to understand.
 - I have confirmed that all buttons work correctly.
 
+## Responsive Web Design Testing
+- Responsive Design Checker was used to test the responsiveness of the website on various screen sizes and devices.
+- Chrome DevTools was used to test responsiveness in different screen sizes during the development process.
 
+## Languages
+- HTML 
+  - Was used structure.
+- CSS
+  - Used to add styles.
+- Java Script 
+  - Was used to write the basic logic for the game.
+
+## Content
+- I confirm that all content was written by the developer.
 
 
 ## Validator testing
