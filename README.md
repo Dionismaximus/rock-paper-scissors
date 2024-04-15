@@ -1,5 +1,5 @@
-# About website
-This website is the second project in the Code Institute course.
+# Overview
+This website is the second project in my Code Institute course.
 
 It showcases various programming skills and methods that I acquired during the course.
 
@@ -7,7 +7,17 @@ Main languages used HTML, CSS, and JavaScript.
 
 ![Screenshot of the website. How it looks like on a different screens](assets/images/How%20am%20I%20look%20like.png)
 
-## Features
+## About Website
+The website is an interactive rock-paper-scissors game. The project was selected by one of the proposed options to choose from.
+The website gives an opportunity to play a mini-game with the computer of 10 rounds. The user can choose one of the options, after which the computer makes its own random choice.
+In each round a winner is determined based on the following logic: rock beats scissors, paper beats rock, scissors beats paper, with the same choice - the round ends in a draw.
+After 10 rounds, the winner by the most wins is determined.
+
+Link to the live site here: [Rock-paper-scissors Game](https://dionismaximus.github.io/rock-paper-scissors/)
+
+
+
+
 - __Navigation__
   - Featured at the top of the page, at the very left located the bridge symbol and it also a link to the main home page.
   - The main navigation block is at the fixed top page with navigation links: Home, Our place, Contacts, Join us.
@@ -82,7 +92,7 @@ Main languages used HTML, CSS, and JavaScript.
   - From the source section drop-down menu, select the Master Branch
   - Once the master branch has been selected< the page provided the link to the completed website
 
-  Link to the live site here: [English Speaking Club in Cork](https://dionismaximus.github.io/Speaking-Club/)
+  
 
 ## Credits
 ### Content
