@@ -62,7 +62,6 @@ h1 {
     text-align: left;
     height: 44.5vh;
     padding: 0 5px 0 30px;
-    /*background-color: #2F4858;*/
     background-image: linear-gradient(to right, #490323, #411032, #361b3c, #282241, #1d2841, #1d2841, #1d2841, #1d2841, #282241, #361b3c, #411032, #490323);
     color: white;
     font-size: 90%;
