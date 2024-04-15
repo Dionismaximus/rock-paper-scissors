@@ -54,7 +54,7 @@ Link to the live site here: [Rock-paper-scissors Game](https://dionismaximus.git
   - Was used to write the basic logic for the game.
 
 ## Content
-- I confirm that all content was written by the developer.
+I confirm that all content was written by the developer.
 
 
 ## Validator testing
