@@ -23,7 +23,7 @@ Link to the live site here: [Rock-paper-scissors Game](https://dionismaximus.git
   - Below the button, the user can check out the rules of the game.
 ![Screenshot of the landing page](assets/images/Readme-img/landing-page.png)
 - __Game page__
-  - After clicking on start game, the game page and the first round opens.
+  - After clicking on start game button, the game page and the first round opens.
 ![Game page](assets/images/Readme-img/game-page.png)
 - __Buttons__
   - All buttons are responsive and respond when hovering as well as when a selection is made.
@@ -41,17 +41,15 @@ Link to the live site here: [Rock-paper-scissors Game](https://dionismaximus.git
 - I confirmed that the all pages, blocks and section are readable and easy to understand.
 - I have confirmed that all buttons work correctly.
 
-## Bugs
-### Solved bugs
-- After checked the code on HTML validation service that showed two errors.
-- One image has two target attribute and one image has inappropriate name that has a space.
-- Bugs have been fixed.
+
+
 
 ## Validator testing
 - __HTML__
-  - No errors were return after solved two previous errros when passing through the official W3C validator
+- HTML code has been tested on [validator.w3.org website](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdionismaximus.github.io%2Frock-paper-scissors%2Fgame.html/)
+![Game page](assets/images/Readme-img/html-check.png)
 - __CSS__
-  - No errors were return when passing through the official (Jigsaw) validator
+  - No errors were return when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator/)
 - __Accessibility__
   - I confirmed that the colors and font chosen are easily to read and understand with a high contrast ratio.
   - The website has been checked by running it through lighthouse in devtools
