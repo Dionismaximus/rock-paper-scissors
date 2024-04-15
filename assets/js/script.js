@@ -55,7 +55,7 @@ function playGame(userChoice) {
     computerChoice = choices[Math.floor(Math.random() * choices.length)]
     
     aiImageChoice.src = `assets/images/${computerChoice}.jpg`
-    setTimeout(() => aiImageChoice.src = `assets/images/rock, paper, scissors.gif`, 2500);
+    setTimeout(() => aiImageChoice.src = `assets/images/rock-paper-scissors.gif`, 2500);
     determineWinnerOfRound();
 }
 
