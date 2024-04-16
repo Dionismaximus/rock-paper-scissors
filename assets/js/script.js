@@ -104,9 +104,9 @@ function determineWinnerOfGame() {
     let endGameMessage ='';
 
     if (userWins > aiWins) {
-        endGameMessage = 'Congratulations!<br>You won the game!<br><i class="fa-regular fa-face-smile"></i>'
+        endGameMessage = "Congratulations!<br>You've won the game!<br><i class='fa-regular fa-face-smile'></i>"
     } else if (userWins < aiWins) {
-        endGameMessage = 'Ahh. Bad luck!<br> Sorry, you lost.<br><i class="fa-regular fa-face-frown"></i>'
+        endGameMessage = "Ahh. Bad luck!<br> Sorry, you've lost.<br><i class='fa-regular fa-face-frown'></i>"
     } else {
         endGameMessage = 'This game ended<br> in a draw.<br><i class="fa-regular fa-face-meh"></i>'
     }
